@@ -17,14 +17,12 @@ class TestMathGame(unittest.TestCase):
         for _ in range(1000):  # Test a large number of random values
             rand_operator = generate_random_operator()
             self.assertIn(rand_operator, ['+', '-', '*'])
-
-
-pass
+        pass
 
     def test_generate_expression(self):
             test_cases = [
-                (5, 2, '+', '5 + 2', 7),
-                (8, 3, '*', '8 * 3', 24),
+                (5, 4, '+', '5 + 4', 9),
+                (6, 3, '*', '6 * 3', 18),
                 (9, 3, '-', '9 - 3', 6)
             ]
 

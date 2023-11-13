@@ -8,7 +8,7 @@ def generate_random_integer(min_value, max_value):
     return random.randint(min_value, max_value)
 
 
-def generate_random_opertaor():
+def generate_random_operator():
     """
         Generate a random arithmetic operator.
     """
@@ -38,7 +38,7 @@ def math_quiz():
     for _ in range(total_questions):
         num1 = generate_random_integer(1, 10)
         num2 = generate_random_integer(1, 5)
-        operator = generate_random_opertaor()
+        operator = generate_random_operator()
 
         problem, answer = generate_expression(num1, num2, operator)
         print(f"\nQuestion: {problem}")
